@@ -1,0 +1,74 @@
+.mini-sticker {
+  float: left !important;
+  margin: 5px 25px 10px 0 !important;
+
+  width: 150px !important;
+  min-height: 150px !important;
+
+  padding: 20px !important;
+  border-radius: 2px;
+  transform: rotate(-1.5deg);
+
+  background-color: #fff9c4 !important;
+  color: #43423b !important;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.15);
+
+  font-family: var(--font-text);
+  font-size: 0.95em;
+  line-height: 1.4;
+
+  position: relative;
+  z-index: 5;
+  box-sizing: border-box;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+.mini-sticker::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 30%;
+  width: 55px;
+  height: 22px;
+
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  transform: rotate(-2deg);
+  backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mini-sticker:hover {
+  transform: rotate(0deg) scale(1.05) !important;
+  box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.25) !important;
+  z-index: 10;
+  cursor: help;
+}
+
+.mini-sticker.pink {
+  background-color: #ffccbc !important;
+}
+
+.mini-sticker.green {
+  background-color: #c8e6c9 !important;
+}
+
+.mini-sticker.blue {
+  background-color: #b3e5fc !important;
+}
+
+.mini-sticker.purple {
+  background-color: #e1bee7 !important;
+}
+
+.polaroid-img img {
+  border: 10px solid white !important;
+  border-bottom: 30px solid white !important;
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.2) !important;
+  transition: transform 0.3s ease;
+  max-width: 300px;
+}
+
+.polaroid-img img:hover {
+  transform: scale(1.05) rotate(1deg);
+}
