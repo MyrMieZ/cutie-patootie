@@ -1,9 +1,9 @@
 .mini-sticker {
   float: left !important;
-  margin: 5px 25px 10px 0 !important;
+  margin: 50px 25px 10px 50px !important;
 
-  width: 150px !important;
-  min-height: 150px !important;
+  width: 200px !important;
+  min-height: 200px !important;
 
   padding: 20px !important;
   border-radius: 2px;
