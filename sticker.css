@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {--font-text: Montserrat;}
+
 .mini-sticker {
   float: left !important;
-  margin: 50px 25px 10px 50px !important;
+  margin: 0px 15px 0px 20px !important;
 
   width: 200px !important;
   min-height: 200px !important;
@@ -24,51 +27,30 @@
 }
 
 .mini-sticker::before {
-  content: "";
   position: absolute;
   top: -12px;
   left: 30%;
   width: 55px;
   height: 22px;
 
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: hsla(0, 0%, 100%, 0.4);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   transform: rotate(-2deg);
   backdrop-filter: blur(1px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+}
+
+.mini-sticker::after {
+position: absolute;
+top: -20px;
+left: 80%;
+  width: 55px;
+  height: 22px;
 }
 
 .mini-sticker:hover {
   transform: rotate(0deg) scale(1.05) !important;
-  box-shadow: 5px 8px 20px rgba(15, 197, 148, 0.244) !important;
+  box-shadow: 5px 8px 20px hsla(161, 98%, 34%, 0.442) !important;
   z-index: 10;
   cursor: help;
-}
-
-.mini-sticker.pink {
-  background-color: #ffccbc !important;
-}
-
-.mini-sticker.green {
-  background-color: #c8e6c9 !important;
-}
-
-.mini-sticker.blue {
-  background-color: #b3e5fc !important;
-}
-
-.mini-sticker.purple {
-  background-color: #e1bee7 !important;
-}
-
-.polaroid-img img {
-  border: 10px solid white !important;
-  border-bottom: 30px solid white !important;
-  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.2) !important;
-  transition: transform 0.3s ease;
-  max-width: 300px;
-}
-
-.polaroid-img img:hover {
-  transform: scale(1.05) rotate(1deg);
 }

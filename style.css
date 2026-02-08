@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-:root {--cool-color: hsla(160, 77%, 36%, 0.522);
+:root {
+--cool-color: hsla(160, 77%, 36%, 0.522);
 }
 html,body {
   scroll-behavior: smooth;
   margin: 0%;
   padding: 0%;
 }
+
+h1{
+text-align: center;
+background-color: hsla(271, 76%, 53%, 0.463);
+margin-top: 0%;
+color: hsl(0, 0%, 100%);}
 
 .wrapper {
   display: flex;
