@@ -9,8 +9,8 @@
   border-radius: 2px;
   transform: rotate(-1.5deg);
 
-  background-color: #fff9c4 !important;
-  color: #43423b !important;
+  background-color: hsl(141, 100%, 88%) !important;
+  color: hsl(53, 40%, 35%) !important;
   box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.15);
 
   font-family: var(--font-text);
@@ -40,7 +40,7 @@
 
 .mini-sticker:hover {
   transform: rotate(0deg) scale(1.05) !important;
-  box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 5px 8px 20px rgba(15, 197, 148, 0.244) !important;
   z-index: 10;
   cursor: help;
 }
